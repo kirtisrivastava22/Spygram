@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Login page </title> 
+    <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body>
+    <h1>Spygram</h1>
+    <div class="container">
+    
+    <!-- <img src="" alt="Logo" align="centre" height="50px"> -->
+        <form action="newlogin.php" name="loginform" onsubmit="return validateForm()" method="post" >
+          <h2  style="text-align:center ;color:azure;padding-left:150px">Login</h2>
+
+    <br><br><br><br>
+        <div id="email"><input type="text" placeholder="Email or phone number" name="email" align="centre" required><span class="formerror"></span>
+        </div>
+  <br>
+  <div id="password">
+  <input type="password" placeholder="password" name="password" align="centre" required><span class="formerror"></span>
+  </div><br>
+  <div id="check">
+    <input type="checkbox" id="remember">
+    <label for="remember">Remember me</label>
+    </div>
+  <pre>      <input type="submit" value="login"></pre>
+<a href="/forgotpswd.html" style="color:cornflowerblue">Forgot Password?</a>
+    <h3 style="text-align: centre; ">New to the world of Spygram?
+    <a href="/signup.html"  style="color:cornflowerblue"><big>Sign Up</big></a></h3>
+</form>
+
+</div>
+<script src="index.js">
+</script>
+</body>
+</html>
